@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eveen Navojith Peiris</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet">
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="ASSETS/CSS/style.css" rel="stylesheet">
+</head>
+<body style="padding-top: 80px;">
+    
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand fw-bolder" href="#">Eveen Navojith Peiris</a>
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-light" href="#home"><i class="fa-solid fa-house pe-2"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-light" href="#aboutMe"><i class="fa-solid fa-address-card pe-2"></i>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-light" href="#portfolio"><i class="fa-solid fa-briefcase pe-2"></i>Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-light" href="#resume"><i class="fa-solid fa-file pe-2"></i>Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 text-light" href="#contact-information"><i class="fas fa-envelope pe-2"></i>Contact</a>
+              </li>
+              <li class="nav-item ms-3">
+                <button type="button" class="btn btn-light fw-bold" data-mdb-ripple-init data-mdb-ripple-color="dark" style="color: #001F3F;">Download My CV</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="bg-white" id="home">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-5 col-lg-6 mb-4 mb-md-0">
+                    <img src="ASSETS/imgs/image01.png" alt="Profile Image" class="img-fluid">
+                </div>
+                <!-- Text Column -->
+                <div class="col-md-7 col-lg-6">
+                    <div class="text-center text-md-start">
+                        <h2 class="fw-bold" style="color: #000000;">Hi, I am</h2> <!-- Bootstrap class for bold -->
+                        <h1 class="fw-bold" style="color: #001F3F;">Eveen Navojith Peiris</h1>
+                        <h3 class="my-3 fw-bold" style="color: #000000;">Web Application Designer & Developer</h3> <!-- Bootstrap margin utility for spacing -->
+                        <p class="lead" style="color: #000000;">Computer Science student and aspiring front-end web developer, eager to apply my HTML, CSS, and JavaScript skills in a dynamic internship role focused on creating impactful web experiences.</p>
+                        <a href="#yourWorkSection" class="btn btn-lg mt-3 rounded-pill" style="background-color: #001F3F; border-color: #001F3F; color: #FFFFFF;">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="aboutMe" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-15">
+                    <div class="about-me-box p-5">
+                        <!-- About Me Heading (inside the box) -->
+                        <h2 class="fw-bold text-light text-center mb-5 text-uppercase">About Me</h2>
+                        
+                        <div class="row">
+                            <!-- Text Column (Left) -->
+                            <div class="col-md-6">
+                                <p class="lead text-light text-center text-md-start mb-4">
+                                    I'm a 2nd-year Computer Science and Software Engineering student at SLIIT Academy, specializing in front-end Web development. I love tackling challenging problems and turning ideas into beautiful, functional website designs.
+                                </p>
+                                <!-- Bullet Points (within the Text Column) -->
+                                <ul class="list-group  text-white custom-list-group"> <!-- Added text-white class here -->
+                                    <li class="list-group-item lead text-light mb-md-0"><i class="fas fa-user pe-2"></i> Age: 23</li>
+                                    <li class="list-group-item lead text-light mb-md-0"><i class="fas fa-calendar-alt pe-2"></i> Date of Birth: 12/09/2000</li>
+                                    <li class="list-group-item lead text-light mb-md-0"><i class="fas fa-map-marker-alt pe-2"></i> From: Panadura, Kalutara, Sri Lanka</li>
+                                    <li class="list-group-item lead text-light mb-md-0"><i class="fas fa-graduation-cap pe-2"></i> Education: Computer Science and Software Engineering at SLIIT Academy</li>
+                                    <li class="list-group-item lead text-light mb-md-0"><i class="fas fa-code pe-2"></i> Skills: HTML, CSS, JavaScript, UI/UX Design</li>
+                                </ul>
+
+                                <!-- Language Proficiency Bar -->
+                                <h5 class="mt-4 mb-4 text-white fw-bold">Language Proficiency</h5>
+                                <!-- Language: English -->
+                                <div class="mb-4">
+                                    <label for="englishProgress" class="form-label text-white">Sinhala</label>
+                                    <div class="progress rounded-pill" style="height: 20px;"> <!-- Increased the height and added 'rounded-pill' class for fully rounded corners -->
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;"></div> <!-- Improved the color to 'bg-primary' -->
+                                    </div>
+                                </div>
+                                <!-- Language: Spanish -->
+                                <div class="mb-4">
+                                    <label for="spanishProgress" class="form-label text-white">English</label>
+                                    <div class="progress rounded-pill" style="height: 20px;"> <!-- Increased the height and added 'rounded-pill' class for fully rounded corners -->
+                                        <div class="progress-bar" role="progressbar" style="width: 82%;"></div> <!-- Improved the color to 'bg-secondary' -->
+                                    </div>
+                                </div>
+                                <!-- Add more languages as needed -->
+    
+
+                            </div>
+                            <!-- Image Column (Right) -->
+                            <div class="col-md-6">
+                                <img src="ASSETS/imgs/WhatsApp Image 2023-12-11 at 21.54.56_c66019c9.jpg" alt="About Me Image" class="img-fluid rounded max-width-80"> <!-- Added img-fluid and max-width-100 classes -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Education Section -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bolder text-center mb-5 text-uppercase" style="color: #001F3F;">Education</h2>
+        <div class="row g-4">
+            <!-- Education Card 1 -->
+            <div class="col-sm-6 col-lg-4 col-xl-4">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <!-- Content for Card 2 -->
+                        <h6 class="card-title mb-4">2025</h6>
+                        <h1 class="fw-bold mb-3" style="font-size: 34px;">BSc (Hons) Computer Science & Software Engineering</h1>
+                        <h5 class="mb-3">At SLIIT Academy, Colombo 03</h5>
+                        <div class="results-subbox d-flex align-items-center justify-content-center">
+                            <h5 style="margin-top: 9px; color: #001F3F;">On Going</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Education Card 2 -->
+            <div class="col-sm-6 col-lg-4 col-xl-4">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <!-- Content for Card 2 -->
+                        <h6 class="card-title mb-4">2024</h6>
+                        <h1 class="fw-bold mb-4">HND in Information Technology</h1>
+                        <h5 class="mb-4">At SLIIT Academy, Colombo 03</h5>
+                        <div class="results-subbox d-flex align-items-center justify-content-center">
+                            <h5 style="margin-top: 9px; color: #001F3F;">On Going</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Education Card 3 -->
+        <div class="col-sm-6 col-lg-4 col-xl-4">
+            <div class="card education-card">
+                <div class="card-body">
+                    <!-- Content for Card 2 -->
+                    <h6 class="card-title mb-4">2023</h6>
+                    <h1 class="fw-bold mb-4">Diploma in English <br>(DIE)</h1>
+                    <h5 class="mb-4">At ESOFT Metro Campus, Panadura</h5>
+                    <div class="results-subbox d-flex align-items-center justify-content-center">
+                        <h5 style="margin-top: 9px; color: #001F3F;">Completed</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Education Card 4 -->
+        <div class="col-sm-6 col-lg-4 col-xl-4">
+            <div class="card education-card">
+                <div class="card-body">
+                    <!-- Content for Card 2 -->
+                    <h6 class="card-title mb-4">2020</h6>
+                    <h1 class="fw-bold mb-4">FCIT Examination</h1>
+                    <h6 class="mb-4">(Foundation Certificate in Information Technology)</h6>
+                    <h5 class="mb-3">At SLIIT Academy, Colombo 03</h5>
+                    <div class="results-subbox d-flex align-items-center justify-content-center">
+                        <h5 style="margin-top: 9px; color: #001F3F;">Completed</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Education Card 5 -->
+        <div class="col-sm-6 col-lg-4 col-xl-4">
+            <div class="card education-card">
+                <div class="card-body">
+                    <h6 class="card-title mb-4">2016 - December</h6>
+                    <h1 class="fw-bold mb-3">Ordinary Level Examination</h1>
+                    <h5 class="mb-3">At Sri Sumangala Boys Collage Panadura</h5>
+                    <div class="results-subbox d-flex align-items-center justify-content-center">
+                        <h5 style="margin-top: 9px; color: #001F3F;">Results: B1, C5, S3</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- ... More cards for additional education entries ... -->
+        </div>
+    </section>
+
+
+    
+    <!-- Portfolio Section -->
+<section class="container my-5" id="portfolio">
+    <h2 class="text-center fw-bolder text-center mb-4 text-uppercase" style="color: #001F3F;">Portfolio</h2>
+    <p class="text-center mb-5" style="color: #000000; font-size: 20px;">Here are some of the projects I've worked on that showcase my skills in web development, UI/UX design, and more.</p>
+    
+    <!-- Portfolio List -->
+    <div class="list-group" style="color: #001F3F;">
+        <!-- Portfolio Item 1 -->
+<a href="https://icryptify.com" class="list-group-item list-group-item-action flex-column align-items-start portfolio-item bg-light">
+    <div class="d-flex flex-column">
+        <div class="mb-1 fw-bold mt-2">
+            <span class="badge rounded-circle text-white large-badge" style="background-color: #001F3F;">1</span>
+        </div>
+        <h5 class="fw-bold mt-2 mb-4" style="color: #001F3F;">Main Website for iCryptify</h5>
+    </div>
+    <p class="mb-1">I crafted the front-end UI for iCryptify's main website, a key project by Edifize Creative Solutions. Adhering to client-specified file structures, I utilized HTML, CSS, and JavaScript to create an intuitive and visually engaging user interface. To view the website, please click the on the box.</p>
+    <div class="mt-3">
+        <p class="mb-2">Technologies used:</p>
+        <i class="fab fa-html5 fa-2x me-2"></i>
+        <i class="fab fa-css3-alt fa-2x me-2"></i>
+        <i class="fab fa-js-square fa-2x"></i>
+    </div>
+    <div class="portfolio-box text-white text-center py-2 rounded mt-3 mb-3" style="background-color: #001F3F;">
+        CLICK ON THE BOX TO VISIT THE PAGE
+    </div>
+</a>
+    </div>
+    <div class="list-group" style="color: #001F3F;">
+        <!-- Portfolio Item 1 -->
+<a href="https://edifize.lk" class="list-group-item list-group-item-action flex-column align-items-start portfolio-item bg-light">
+    <div class="d-flex flex-column">
+        <div class="mb-1 fw-bold mt-2">
+            <span class="badge rounded-circle text-white large-badge" style="background-color: #001F3F;">2</span>
+        </div>
+        <h5 class="fw-bold mt-2 mb-4" style="color: #001F3F;">Main Website for Edifize Creative Solutions</h5>
+    </div>
+    <p class="mb-1">I designed the front-end UI of Edifize Creative Solutions' main website, focusing on a client-specified file structure. Utilizing HTML, CSS, and JavaScript, I crafted a user-friendly and visually appealing interface. To view the website, please click on the box.</p>
+    <div class="mt-3">
+        <p class="mb-2">Technologies used:</p>
+        <i class="fab fa-html5 fa-2x me-2"></i>
+        <i class="fab fa-css3-alt fa-2x me-2"></i>
+        <i class="fab fa-js-square fa-2x"></i>
+    </div>
+    <div class="portfolio-box text-white text-center py-2 rounded mt-3 mb-3" style="background-color: #001F3F;">
+        CLICK ON THE BOX TO VISIT THE PAGE
+    </div>
+</a>
+    </div>
+    <div class="list-group" style="color: #001F3F;">
+        <!-- Portfolio Item 1 -->
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-start portfolio-item bg-light">
+    <div class="d-flex flex-column">
+        <div class="mb-1 fw-bold mt-2">
+            <span class="badge rounded-circle text-white large-badge" style="background-color: #001F3F;">3</span>
+        </div>
+        <h5 class="fw-bold mt-2 mb-4" style="color: #001F3F;">Portfolio Website (Current)</h5>
+    </div>
+    <p class="mb-1">Explore my portfolio website, designed in FIGMA and developed using HTML, CSS, JavaScript, and Bootstrap in Visual Studio Code. It's a reflection of my expertise in web design and development. For a glimpse of the original FIGMA design, click on the box.</p>
+    <div class="mt-3">
+        <p class="mb-2">Technologies used:</p>
+        <i class="fab fa-html5 fa-2x me-2"></i>
+        <i class="fab fa-css3-alt fa-2x me-2"></i>
+        <i class="fab fa-js-square fa-2x me-2"></i>
+        <i class="fab fa-figma fa-2x me-2"></i>
+        <i class="bi bi-bootstrap fa-2x me-2"></i>
+    </div>
+    <div class="portfolio-box text-white text-center py-2 rounded mt-3 mb-3" style="background-color: #001F3F;">
+        CLICK ON THE BOX TO VISIT THE PAGE
+    </div>
+</a>
+    </div>
+</section>
+
+
+   <!-- Resume Download Section -->
+<section class="container-fluid py-5" style="background-color: #001F3F;" id="resume">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image on the Left Side -->
+            <div class="col-md-4 mb-4">
+                <img src="ASSETS/imgs/ggvg.png" alt="Your Image" class="img-fluid" />
+            </div>
+            <!-- Text and Button on the Right Side -->
+            <div class="col-md-8">
+                <h2 class="text-center text-md-start fw-bolder text-uppercase text-white">Download My Resume</h2>
+                <p class="text-center text-md-start text-white mt-4">Click the button below to download my resume and learn more about my qualifications and experience.</p>
+                <div class="text-center text-md-start">
+                    <a href="your-resume-file.pdf" class="btn btn-light rounded-pill mt-4" style="font-size: 24px; padding: 20px 40px; color: #001F3F;">
+                        <i class="fas fa-download me-2" style="color: #001F3F;"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section class="py-5 bg-light" id="skills">
+    <div class="container">
+        <!-- Section Title -->
+        <h2 class="text-center fw-bolder text-center mb-5 text-uppercase" style="color: #001F3F;">Skills</h2>
+
+        <!-- Skills Content -->
+        <div class="row align-items-center">
+            <!-- Technical Skills -->
+            <div class="col-md-6 mb-4">
+                <div class="card" style="background-color: #001F3F;"> <!-- Custom Background Color -->
+                    <div class="card-img-top d-flex justify-content-center p-4">
+                        <!-- Technical Skills Image -->
+                        <img src="ASSETS/imgs/technical.png" class="img-fluid" style="max-width: 50%;" alt="Technical Skills">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 text-white">Technical Skills</h3> <!-- Text color changed to white for better contrast -->
+                        <!-- List of Technical Skills -->
+                        <ul class="list-group list-group-flush text-white"> <!-- Text color changed to white for better contrast -->
+                            <li class="list-group-item text-light">HTML, CSS, JavaScript</li>
+                            <li class="list-group-item text-light">Bootstrap & Responsive Design</li>
+                            <li class="list-group-item text-light">Figma & Adobe XD</li>
+                            <li class="list-group-item text-light">Adobe Illustrator </li>
+                            <li class="list-group-item text-light">Documentation Handling (MS Word & MS Power Point)</li>
+                            <!-- Add more as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="col-md-6 mb-4">
+                <div class="card" style="background-color: #001F3F;"> <!-- Custom Background Color -->
+                    <div class="card-img-top d-flex justify-content-center p-4">
+                        <!-- Soft Skills Image -->
+                        <img src="ASSETS/imgs/Soft.png" class="img-fluid" style="max-width: 50%;" alt="Soft Skills">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold mb-3 text-white">Soft Skills</h3> <!-- Text color changed to white for better contrast -->
+                        <!-- List of Soft Skills -->
+                        <ul class="list-group list-group-flush text-white"> <!-- Text color changed to white for better contrast -->
+                            <li class="list-group-item text-light">Effective Communication</li>
+                            <li class="list-group-item text-light">Teamwork & Collaboration</li>
+                            <li class="list-group-item text-light">Problem-Solving</li>
+                            <li class="list-group-item text-light">Adaptability</li>
+                            <li class="list-group-item text-light">Time Management & Continuous Learning</li>
+                            <!-- Add more as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Technologies Section -->
+<section id="technologies" class="py-5 bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <h2 class="text-center fw-bolder text-center mb-5 text-uppercase" style="color: #001F3F;">Technologies I Know</h2>
+        
+        <!-- Technologies Icons -->
+        <div class="row text-center">
+            <!-- HTML Icon -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/HTML.png" alt="HTML" class="tech-icon">
+                <p>HTML</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/CSS.png" alt="CSS" class="tech-icon">
+                <p>CSS</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/JavaScript.png" alt="JavaScript" class="tech-icon">
+                <p>JavaScript</p>
+            </div>
+           
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/Bootstrap.png" alt="Bootstrap" class="tech-icon">
+                <p>Bootstrap</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/MDB.png" alt="MDBootstrap" class="tech-icon">
+                <p>MDBootstrap</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/FIgma.png" alt="Figma" class="tech-icon">
+                <p>Figma</p>
+            </div>
+           
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/AdobeXD.png" alt="Adobe XD" class="tech-icon">
+                <p>Adobe XD</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/adobeAI.png" alt="Adobe Illustrator" class="tech-icon">
+                <p>Adobe Illustrator</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="technologies" class="py-5 bg-light">
+    <div class="container">
+        <!-- Section Title -->
+        <h2 class="text-center fw-bolder text-center mb-5 text-uppercase" style="color: #001F3F;">Technologies I Plan to Learn</h2>
+        
+        <!-- Technologies Icons -->
+        <div class="row text-center">
+            <!-- HTML Icon -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/React JS.png" alt="React JS" class="tech-icon">
+                <p>React JS</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/Tailwind CSS.png" alt="Tailwind CSS" class="tech-icon">
+                <p>Tailwind CSS</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/Sass.png" alt="Sass CSS" class="tech-icon">
+                <p>Sass CSS</p>
+            </div>
+           
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/Vue JS.png" alt="Vue JS" class="tech-icon">
+                <p>Vue JS</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/jquery.png" alt="jQuery" class="tech-icon">
+                <p>jQuery</p>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/Nodejs.png" alt="Node JS" class="tech-icon">
+                <p>Node JS</p>
+            </div>
+           
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/Angular JS.png" alt="Angular JS" class="tech-icon">
+                <p>Angular JS</p>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <img src="ASSETS/imgs/mobileapplication UI.png" alt="Mobile UI" class="tech-icon">
+                <p>Mobile UI</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section id="contact-information" class="py-5 bg-light">
+    <div class="container">
+        <!-- Heading -->
+        <h2 class="text-center fw-bolder text-center mb-5 text-uppercase" style="color: #001F3F;">Contact Me</h2>
+
+        <div class="row justify-content-center">
+            <!-- Contact Box -->
+            <div class="col-md-4">
+                <div class="contact-box p-4 mb-3 text-center mx-auto" style="border: 2px solid #001F3F;">
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <div class="fw-bolder mb-2" style="color: #001F3F;">
+                            <i class="fas fa-envelope me-2"></i>Email:
+                        </div>
+                        <div>
+                            eveenpeiris2022@gmail.com
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="mb-2">
+                        <div class="fw-bolder mb-2" style="color: #001F3F;">
+                            <i class="fas fa-phone me-2"></i>Phone:
+                        </div>
+                        <div>
+                            +94 78 136 7972
+                        </div>
+                    </div>
+                </div>
+                <!-- Social Icons -->
+                <div class="social-icons d-flex justify-content-center mb-3">
+                    <a href="https://www.facebook.com/profile.php?id=100090084324173&mibextid=ZbWKwL" class="me-2 social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/eveenp?utm_source=qr&igsh=Y2Jham45Zmc2N3Z3" class="me-2 social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/EveenPeiris1?t=AkhW8D5Ny_ADNHnR7X_2OQ&s=09" class="me-2 social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/qr/DBQV4NFBGPLYP1" class="me-2 social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/eveen-navojith-peiris-309385247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="me-2 social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                              
+            </div>
+
+            <!-- Right Side (Image) -->
+            <div class="col-md-4">
+                <img src="ASSETS/imgs/contact.png" alt="Your Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center text-white text-lg-start"  style="background-color: #000000;">
+    <div class="container p-5">
+      <div class="row">
+        <!-- Left Side: Name, Occupation & Social Links -->
+        <div class="col-12 col-md-6 mb-4">
+            <h1 class="text-uppercase mb-0 fw-bold">Eveen Navojith Peiris</h1>
+            <h4 class="mt-2">Web Application Designer & Developer (Intern)</h4>
+  
+          <!-- Social Icons -->
+          <!-- Social Icons -->
+<div class="mt-4">
+    <!-- Facebook -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100090084324173&mibextid=ZbWKwL" role="button">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <!-- Instagram -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/eveenp?utm_source=qr&igsh=Y2Jham45Zmc2N3Z3" role="button">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <!-- Whatsapp -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/qr/DBQV4NFBGPLYP1" role="button">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Twitter -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://x.com/EveenPeiris1?t=AkhW8D5Ny_ADNHnR7X_2OQ&s=09" role="button">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <!-- Linkedin -->
+    <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/eveen-navojith-peiris-309385247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" role="button">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+    
+        </div>
+  
+        <!-- Right Side: Links -->
+        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center justify-content-md-end">
+            <div>
+              <h5 class="text-uppercase fw-bold mb-4">Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#home" class="text-white"><i class="fas fa-home me-2 mb-2"></i>Home</a></li>
+                <li><a href="#aboutMe" class="text-white"><i class="fas fa-user me-2 mb-2"></i>About Me</a></li>
+                <li><a href="#portfolio" class="text-white"><i class="fas fa-briefcase me-2 mb-2"></i>Portfolio</a></li>
+                <li><a href="#resume" class="text-white"><i class="fas fa-file-alt me-2 mb-2"></i>Resume</a></li>
+                <li><a href="#contact-information" class="text-white"><i class="fas fa-envelope me-2 mb-2"></i>Contact Me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #FFFFFF;">
+        <div class="container" style="color: #000000;">
+          © 2023 Eveen Navojith Peiris. All Rights Reserved.
+        </div>
+      </div>
+  </footer>
+  
+
+
+
+
+    
+    
+    
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+    <script src="ASSETS/JS/script.js"></script>
+</body>
+</html>

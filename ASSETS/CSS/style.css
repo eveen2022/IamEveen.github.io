@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Handle color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Handle color on hover */
+}
+
+header {
+    z-index: 1;
+}
+
+.about-me-box {
+    background-color: #001F3F;
+    padding: 20px; /* Add padding to the box */
+    border-radius: 10px;
+}
+
+.education-card {
+    background-color: #001F3F; /* Dark brown color */
+    color: white; /* Adjust text color for better readability */
+}
+
+.results-subbox {
+    background-color: white; /* Slightly lighter shade for the sub-box */
+    color: #001F3F;
+    padding: 10px;
+    margin-top: 15px; /* Space between the content and sub-box */
+    border-radius: 5px; /* Optional: for slightly rounded corners */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.portfolio-item {
+    border: 2px solid #001F3F; /* Set border color and increase weight */
+    margin-bottom: 1rem; /* Add space between items */
+}
+
+.large-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Fixed width */
+    height: 35px; /* Fixed height, equal to width for a circle */
+    padding: 0; /* Removing default padding */
+    border-radius: 50%; /* Makes it a circle */
+    font-size: 1em; /* Adjust font size as needed */
+}
+
+.tech-icon {
+    max-width: 100px; /* or any size you prefer */
+    height: auto; /* maintain aspect ratio */
+    margin-bottom: 20px; /* space below each icon */
+}
+
+@media (max-width: 576px) {
+    /* Adjustments for smaller screens */
+    .tech-icon {
+        max-width: 70px; /* smaller icons on mobile */
+    }
+}
+
+
+.contact-box {
+    border: 2px solid #001F3F;
+    border-radius: 10px; /* Rounded corners for the box */
+    background: #fff; /* White background for the box */
+}
+
+.social-icons a {
+    font-size: 1.5em; /* Size of social icons */
+    margin: 0 10px; /* Spacing around icons */
+    color: #333; /* Icon color */
+}
+
+.social-icons a:hover {
+    color: #001F3F; /* Color for icon hover */
+}
+
+/* Ensure the image is responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-icons a.social-icon {
+    display: inline-flex; /* Makes it possible to center the icon */
+    align-items: center; /* Vertically centers the icon */
+    justify-content: center; /* Horizontally centers the icon */
+    width: 40px; /* Width of the circle */
+    height: 40px; /* Height of the circle */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #001F3F; /* Background color of the circle */
+    color: white; /* Color of the icon */
+    font-size: 20px; /* Size of the icon */
+    text-decoration: none; /* Removes underline from the icon */
+}
+
+.social-icons a.social-icon:hover {
+    background-color: #0056b3; /* Darker shade when hovered for visual feedback */
+    color: #fff; /* Keeps icon color consistent */
+    text-decoration: none; /* Ensures no underline appears */
+}
+
+
+footer a {
+    color: white; /* Ensures all links are white */
+}
+
+footer a:hover {
+    text-decoration: none; /* Removes the underline on hover */
+    color: grey; /* Changes color on hover */
+}
+
+/* Social icon hover effect */
+.btn-floating:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    color: white; /* White icon color on hover */
+}
+
+.navbar.bg-dark {
+    background-color: #001F3F !important;
+}
+
+.navbar .nav-link {
+    background-color: #001F3F; /* Your desired color */
+    color: #ffffff; /* Change text color if needed */
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    background-color: darken(#001F3F, 10%); /* Slightly darker on hover/focus */
+}
+
+.btn-dark:hover {
+    background-color: darken(#001F3F, 10%);
+    border-color: darken(#001F3F, 10%);
+}
+
+.about-me-box {
+    background-color: #001F3F; /* Your desired color */
+}
+
+.about-me-box .progress-bar {
+    background-color: #2ECC71; /* Vibrant teal color */
+}
+
+.education-card {
+    background-color: #001F3F;
+}
+
